@@ -41,4 +41,4 @@ Idle Latency:     0.86 ms   (jitter: 0.10ms, low: 0.69ms, high: 0.93ms)
   Result URL: https://www.speedtest.net/result/c/62b720d3-ec68-4862-b2e4-a9b6501825d6
 ```
 可将最后一行链接在浏览器中打开，效果如图：
-[](https://raw.githubusercontent.com/ffus/sptest/main/demo.png)
+![打开链接：https://www.speedtest.net/result/c/62b720d3-ec68-4862-b2e4-a9b6501825d6 即可查看](https://raw.githubusercontent.com/ffus/sptest/main/demo.png)
