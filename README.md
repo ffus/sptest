@@ -22,3 +22,21 @@ speedtest -s [server-id]  # Specify a server from the server list using its id
 | 36663 | Zhenjiang | hina Telecom JiangSu 5G |
 | 24447 | Shanghai | China Unicom 5G |
 | 27154 | TianJin | ChinaUnicom-5G
+
+# 测试效果
+```
+root@arm424:~# bash <(curl -sS https://raw.githubusercontent.com/ffus/sptest/main/sptest.sh)
+Speedtest is already installed. Running speedtest...
+
+   Speedtest by Ookla
+
+      Server: Emtel Ltd - Marseille (id: 59444)
+         ISP: Oracle Cloud
+Idle Latency:     0.86 ms   (jitter: 0.10ms, low: 0.69ms, high: 0.93ms)
+    Download:  2864.64 Mbps (data used: 1.4 GB)                                                   
+                  0.91 ms   (jitter: 0.14ms, low: 0.78ms, high: 1.55ms)
+      Upload:  2890.53 Mbps (data used: 2.8 GB)                                                   
+                  1.00 ms   (jitter: 13.49ms, low: 0.73ms, high: 207.95ms)
+ Packet Loss:     0.0%
+  Result URL: https://www.speedtest.net/result/c/62b720d3-ec68-4862-b2e4-a9b6501825d6
+```
