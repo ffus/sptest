@@ -22,24 +22,29 @@ uninstall_speedtest() {
         rm /etc/yum.repos.d/ookla_speedtest-cli.repo
         yum remove -y speedtest
     else
-        echo "Unsupported OS."
+        echo -e "\033[31mUnsupported OS.\033[0m"
         exit 1
     fi
 }
 
-# check the argument passed to the script
+
 if [ $1 == "-u" ]; then
     uninstall_speedtest
-    echo -e "Uninstall done. \033[0;32m[OK]\033[0m"
+    echo -e "\033[0;32mUninstalled or not installed. --- status:[OK]\033[0m"
 else
-    if [ -f "/etc/debian_version" ]; then
-        install_speedtest_debian
-        yes | speedtest
-    elif [ -f "/etc/redhat-release" ]; then
-        install_speedtest_centos
-        yes | speedtest
+    if command -v speedtest >/dev/null 2>&1; then
+        echo "Speedtest is already installed. Running speedtest..."
+        speedtest
     else
-        echo "This script only supports Debian/Ubuntu and CentOS/RHEL."
-        exit 1
+        if [ -f "/etc/debian_version" ]; then
+            install_speedtest_debian
+            yes | speedtest
+        elif [ -f "/etc/redhat-release" ]; then
+            install_speedtest_centos
+            yes | speedtest
+        else
+            echo -e "\033[31mThis script only supports Debian/Ubuntu and CentOS/RHEL.\033[0m"
+            exit 1
+        fi
     fi
 fi
