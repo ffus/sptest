@@ -34,6 +34,14 @@ speedtest -s 5396
 ```
 指定的节点可能会连接不上，这取决于节点与主机的连接性，可以尝试更换其他节点
 
+国内机可能无法连接 `GitHub`，可以尝试先将 `sptest.sh` 下载到本地，然后上传到国内机，再执行脚本
+```
+# 安装并测速
+bash sptest.sh
+
+# 卸载
+bash sptest.sh -u
+```
 
 #### 测试效果
 ```
@@ -53,4 +61,5 @@ Idle Latency:     0.86 ms   (jitter: 0.10ms, low: 0.69ms, high: 0.93ms)
   Result URL: https://www.speedtest.net/result/c/62b720d3-ec68-4862-b2e4-a9b6501825d6
 ```
 可将最后一行链接在浏览器中打开，效果如图：
-![打开链接：https://www.speedtest.net/result/c/62b720d3-ec68-4862-b2e4-a9b6501825d6 即可查看](https://raw.githubusercontent.com/ffus/sptest/main/demo.png)
+<!-- ![打开链接：https://www.speedtest.net/result/c/62b720d3-ec68-4862-b2e4-a9b6501825d6 即可查看](https://raw.githubusercontent.com/ffus/sptest/main/demo.png) -->
+![打开链接：https://www.speedtest.net/result/c/62b720d3-ec68-4862-b2e4-a9b6501825d6 即可查看](https://us.v-cdn.net/6034893/uploads/N6LF4EVVC17K/demo.png)
