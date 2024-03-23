@@ -44,10 +44,8 @@ bash sptest.sh -u
 ```
 
 #### 测试效果
+主要输出内容：
 ```
-root@arm424:~# bash <(curl -sS https://raw.githubusercontent.com/ffus/sptest/main/sptest.sh)
-Speedtest is already installed. Running speedtest...
-
    Speedtest by Ookla
 
       Server: Emtel Ltd - Marseille (id: 59444)
