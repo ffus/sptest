@@ -10,7 +10,7 @@ bash <(curl -sS https://raw.githubusercontent.com/ffus/sptest/main/sptest.sh)
 
 #### 一键卸载
 ```
-bash <(curl -sS https://raw.githubusercontent.com/ffus/sptest/main/sptest.sh) -U
+bash <(curl -sS https://raw.githubusercontent.com/ffus/sptest/main/sptest.sh) -u
 ```
 
 #### 指定 server-id 测速
