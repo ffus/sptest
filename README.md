@@ -4,13 +4,31 @@
 # sptest 的使用
 #### 一键安装和测速
 ```
+# 国外
 bash <(curl -sS https://raw.githubusercontent.com/ffus/sptest/main/sptest.sh)
+
+# 国内
+bash <(curl -sS https://mirror.ghproxy.com/raw.githubusercontent.com/ffus/sptest/main/sptest.sh)
 ```
 再次使用可直接执行 `speedtest`
 
 #### 一键卸载
 ```
+# 国外
 bash <(curl -sS https://raw.githubusercontent.com/ffus/sptest/main/sptest.sh) -u
+
+# 国内
+bash <(curl -sS https://mirror.ghproxy.com/raw.githubusercontent.com/ffus/sptest/main/sptest.sh)
+```
+---
+
+也可以尝试先将 `sptest.sh` 下载到本地，然后上传到国内机，再执行脚本
+```
+# 安装并测速
+bash sptest.sh
+
+# 卸载
+bash sptest.sh -u
 ```
 
 #### 指定 server-id 测速
@@ -34,14 +52,6 @@ speedtest -s 5396
 ```
 指定的节点可能会连接不上，这取决于节点与主机的连接性，可以尝试更换其他节点
 
-国内机可能无法连接 `GitHub`，可以尝试先将 `sptest.sh` 下载到本地，然后上传到国内机，再执行脚本
-```
-# 安装并测速
-bash sptest.sh
-
-# 卸载
-bash sptest.sh -u
-```
 
 #### 测试效果
 主要输出内容：
