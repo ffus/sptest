@@ -34,7 +34,7 @@ if [ $1 == "-u" ]; then
 else
     if command -v speedtest >/dev/null 2>&1; then
         echo "Speedtest is already installed. Running speedtest..."
-        speedtest
+        yes | speedtest
     else
         if [ -f "/etc/debian_version" ]; then
             install_speedtest_debian
