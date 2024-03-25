@@ -18,7 +18,7 @@ bash <(curl -sS https://mirror.ghproxy.com/raw.githubusercontent.com/ffus/sptest
 bash <(curl -sS https://raw.githubusercontent.com/ffus/sptest/main/sptest.sh) -u
 
 # 国内
-bash <(curl -sS https://mirror.ghproxy.com/raw.githubusercontent.com/ffus/sptest/main/sptest.sh)
+bash <(curl -sS https://mirror.ghproxy.com/raw.githubusercontent.com/ffus/sptest/main/sptest.sh) -u
 ```
 ---
 
