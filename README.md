@@ -16,7 +16,7 @@ bash <(curl -sS https://raw.githubusercontent.com/ffus/sptest/main/sptest.sh) -u
 ```
 ---
 
-也可以尝试先将 `sptest.sh` 下载到本地，然后上传到国内机，再执行脚本
+也可以尝试先将 `sptest.sh` 下载到本地，然后上传到虚拟机，再执行脚本
 ```
 # 安装并测速
 bash sptest.sh
