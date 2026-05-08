@@ -1,8 +1,9 @@
 # sptest
-基于 Speedtest CLI 的一键测速脚本，支持 `Debian/Ubuntu` 和 `CentOS/RHEL`
+Ookla Speedtest 一键测速脚本，支持 `Debian/Ubuntu`, `CentOS/RHEL`, `Alipine Linux` 等系统
 
 # sptest 的使用
-> 没有 sudo 先安装，如：`apt install -y sudo`
+> 没有 bash 的，先安装 bash
+
 #### 一键安装和测速
 ```
 bash <(curl -sS https://raw.githubusercontent.com/ffus/sptest/main/sptest.sh)
