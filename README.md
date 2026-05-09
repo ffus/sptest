@@ -8,7 +8,7 @@ Ookla Speedtest 一键测速脚本，支持 `Debian/Ubuntu`, `CentOS/RHEL`, `Ali
 ```
 bash <(curl -sS https://raw.githubusercontent.com/ffus/sptest/main/sptest.sh)
 ```
-再次使用可直接执行 `speedtest`
+下次测速可直接执行 `speedtest`
 
 #### 一键卸载
 ```
@@ -33,8 +33,12 @@ speedtest -s [server-id]  # Specify a server from the server list using its id
 | 节点id | 赞助商 |
 |---------|---------|
 | 24447 | China Unicom 5G |
+| 30852 | Duke Kunshan University |
 | 5396 | China Telecom JiangSu 5G |
+| 16204 | JSQY |
 | 36663 | China Telecom JiangSu 5G |
+| 43752 | BJ Unicom |
+| 59387 | 浙江电信 |
 
 指定节点示例：
 ```
